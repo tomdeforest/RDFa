@@ -1,0 +1,168 @@
+body {
+	background:#030d1c;
+	color:#113556;
+}
+a {
+	color:#c8009c;
+}
+a:hover {
+	color:#66bc29;
+}
+p {
+	text-indent:2em;
+	font-family:Georgia, "Lucida Bright","Times New Roman";
+}
+p:first-child {
+	text-indent:0;
+}
+blockquote  { 
+	margin: 1.5em 2em; 
+	font-style: italic; 
+}
+@font-face {
+	font-family: "Museo Sans";
+	src: url("type/MuseoSans_500.otf") format('opentype');
+}
+h1, h2 {
+    font-family: "Museo Sans", "Helvetican Neue", Helvetica, sans-serif;
+}
+/* HEADER */
+#header {
+	color:#fff;
+	min-height:6em;
+	position:relative;
+}
+#header h1 {
+	position:absolute;
+	bottom:0;
+	margin:0;
+	font-size: 3.7em; 
+	line-height: 1;
+	letter-spacing: -.06em;
+}
+.a {
+	color:#c8009c;
+}
+/* MENU */
+#main, #menu {
+	background:#fff;
+}
+#menu {
+	min-height:6em;
+	font-family: "Museo Sans","Helvetica Neue",Helvetica, sans-serif;
+	letter-spacing: -.03em;
+}
+#menu .container {
+	position:relative;
+	min-height:6em;
+}
+#menu ul {
+	list-style: none;
+	margin:0;
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+#menu li {
+	font-size:1.16667em;
+	display: inline;
+	margin-right:1em;
+	text-transform:uppercase;
+}
+#menu a {
+	text-decoration:none;
+}
+/* MAIN */
+#main {
+	padding-bottom:2.25em;
+/*	border-bottom:solid 1px #66bc29;*/
+}
+#main .post-title {
+	min-height:12em;
+	position:relative;
+}
+#main .post-title h2 {
+	position:absolute;
+	bottom:0;
+	color:#66bc29;
+	line-height:1.2;
+	margin-bottom:.4em;
+	font-size: 2.5em;
+	text-transform: uppercase;
+	letter-spacing: -.03em;
+/*	font-family:"Minion Pro", "Georgia";*/
+}
+.post-body {
+	min-height:18em;
+}
+.post-end {
+	display:inline;
+	float:none;
+	margin:0;
+	vertical-align:middle;
+}
+hr.divider {
+	background: #66bc29; 
+	color: #66bc29;
+	height: 1px;
+	margin: 1.5em 0 0 11.32075471698%;
+	clear:both;
+}
+.finale {
+	height:.75em;
+	margin:0 0 0 11.32075471698%;
+	width:43.39622641509%;
+	background: #66bc29 url(img/finale.gif) repeat scroll top left; 
+	color: #66bc29;
+	clear:both;
+	display:block;
+}
+.post-meta {
+	font-size:.83334em;
+}
+.post-meta dt, #footer dt {
+	font-weight:normal;
+	text-transform: uppercase;
+	font-family:"Museo Sans","Helvetica Neue",sans-serif;
+}
+.post-meta dd, #footer dd {
+	margin-left:0;
+}
+dd.date {
+	font-family:Georgia,serif;
+	font-style: italic;
+}
+/* FOOTER */
+#footer {
+	padding-top:3em;
+}
+#footer a {
+	color:#f57900;
+}
+#footer dl {
+	font-size:.83334em;
+	line-height:1.8em;
+}
+#footer dt {
+	color:#fff;
+}
+#footer h5 {
+	font-size:.83334em;
+	font-family: "Museo Sans","Helvetica Neue", Helvetica, sans-serif;
+	color:#fff;
+	font-weight:normal;
+	text-transform: uppercase;
+	margin-bottom:0;
+	letter-spacing: .03em;
+}
+.sw-logo {
+	text-align:center;
+}
+.four-columns {
+	-moz-column-count: 4;
+	-moz-column-gap: 1.88679245283%;
+	-webkit-column-count: 4;
+	-webkit-column-gap: 1.88679245283%;
+	column-count: 4;
+	column-gap: 1.88679245283%;
+}

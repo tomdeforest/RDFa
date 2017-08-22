@@ -1,0 +1,131 @@
+@import url(reset.css);
+@import url(typography.css);
+/*
+	First attempt at setting up my own grid system; a fluid grid system no less.
+	© Tom DeForest 2009, http://smallandsimplethings.org, flyleaf@gmail.com
+	
+	References:
+	http://www.alistapart.com/articles/fluidgrids/
+	http://www.blueprintcss.org/
+	
+	Remember: target ÷ context = result
+*/
+.container {
+	max-width: 79.5em;
+	_width:79.5em;
+	margin: 0 auto;
+/*	padding: 1em;*/
+}
+
+/* Columns
+-------------------------------------------------------------- */
+
+/* Sets up basic grid floating and margin. */
+.span-1, .span-2, .span-3, .span-4, .span-5, 
+.span-6, .span-7, .span-8, .span-9 {
+	float: left;
+	margin-right: 1.88679245283%;
+/*	background:#eee;*/
+/*	font-size:75%;*/
+}
+
+/* The last column in a row needs this class. */
+.last { margin-right: 0; }
+
+/* Use these classes to set the width of a column. */
+.span-1  { width: 9.43396226415%; }		/* 90px */
+.span-2  { width: 20.75471698113%; }	/* 198px */
+.span-3  { width: 32.075471698%; }		/* 306px */
+.span-4  { width: 43.39622641509%; }	/* 414px */
+.span-5  { width: 54.71698113208%; }	/* 522px */
+.span-6  { width: 66.03773584906%; }	/* 630px */
+.span-7  { width: 77.35849056604%; }	/* 738px */
+.span-8  { width: 88.67924528302%; }	/* 846px */
+.span-9  { width: 100%; margin: 0; }	/* 954px */
+
+/* Add these to a column to append empty cols. */
+.append-1  { padding-right: 40px; }  
+.append-2  { padding-right: 80px; } 
+.append-3  { padding-right: 120px; } 
+.append-4  { padding-right: 160px; } 
+.append-5  { padding-right: 200px; } 
+.append-6  { padding-right: 240px; } 
+.append-7  { padding-right: 280px; } 
+.append-8  { padding-right: 320px; } 
+
+/* Add these to a column to prepend empty cols. */
+.prepend-1  { padding-left: 11.32075471698%; }  
+.prepend-2  { padding-left: 22.64150943396%; } 
+.prepend-3  { padding-left: 33.96226415094%; } 
+.prepend-4  { padding-left: 45.28301886792%; } 
+.prepend-5  { padding-left: 56.60377358491%; } 
+.prepend-6  { padding-left: 67.92452830189%; } 
+.prepend-7  { padding-left: 79.24528301887%; } 
+.prepend-8  { padding-left: 90.56603773585%; } 
+
+/* Use these classes on an element to push it into the 
+   next column, or to pull it into the previous column.  */
+
+.pull-1 { margin-left: -40px; }
+.pull-2 { margin-left: -80px; }
+.pull-3 { margin-left: -120px; }
+.pull-4 { margin-left: -160px; }
+.pull-5 { margin-left: -200px; }
+
+.pull-1, .pull-2, .pull-3, 
+.pull-4, .pull-5, .pull-5 {
+	float:left;
+	position:relative;
+}
+
+.push-1 { margin: 0 -40px 1.5em 40px; }
+.push-2 { margin: 0 -80px 1.5em 80px; }
+.push-3 { margin: 0 -120px 1.5em 120px; }
+.push-4 { margin: 0 -160px 1.5em 160px; }
+.push-5 { margin: 0 -200px 1.5em 200px; }
+
+.push-0, .push-1, .push-2, 
+.push-3, .push-4, .push-5 { 
+  float: right;
+	position:relative;
+}
+
+/* Use this to create a horizontal ruler across a column. */
+hr {
+  background: #ddd; 
+  color: #ddd;
+  clear: both; 
+  float: none; 
+/*  width: 100%; */
+  height: 1px;
+  margin: 0 0 1.45em;
+  border: none; 
+}
+hr.space {
+  background: #fff;
+  color: #fff;
+}
+hr.hidden {
+	margin:0;
+	visibility:hidden;
+}
+
+/* Clearing floats without extra markup
+   Based on How To Clear Floats Without Structural Markup by PiE
+   [http://www.positioniseverything.net/easyclearing.html] */
+
+.clearfix:after, .container:after {
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.clearfix, .container {display: inline-block;}
+* html .clearfix,
+* html .container {height: 1%;}
+.clearfix, .container {display: block;}
+
+/* Regular clearing
+   apply to column that should drop below previous ones. */
+.clear { clear:both; }

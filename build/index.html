@@ -1,0 +1,176 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>RDFa Grid Tests</title>
+	<style type="text/css" media="screen">
+		@import url(rdfa_grid.css);
+		@import url(rdfa.css);
+	</style>
+	<script type="text/javascript" charset="utf-8" src="jquery/jquery-1.3.2.min.js"> </script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$("hr.divider").after("<img src='img/finale.gif' class='finale' />");
+			$(".post-body p:last-child").append("<img class='post-end' src='img/last_p.png' alt='End of post' />");
+		});
+	</script>
+</head>
+
+<body>
+	<div id="header" class="container">
+		<h1>RDF<span class="a">a</span></h1>
+	</div>
+	<div id="menu">
+		<div class="container">
+			<ul class="span-8 prepend-1">
+				<li><a href="">About</a></li>
+				<li><a href="">Case Studies</a></li>
+				<li><a href="">Implementations</a></li>
+				<li><a href="">in the wild</a></li>
+				<li><a href="">Publications</a></li>
+				<li><a href="">Specifications</a></li>
+				<li><a href="">Talks about RDFa </a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main" class="clearfix">
+		<div class="post container">
+			<div class="post-title">
+				<h2 class="span-5 prepend-1">Direct manipulation of RDFa & The Magic of Television</h2>
+			</div>
+			<div class="post-body span-4 prepend-1">
+				<p>In <a href="http://some-site.com/">Case Study: A Linked Open Data Resource List Management Tool for Undergraduate Students</a>, Chris Clarke and Fiona Greig report on a direct manipulation package for editing pages with RDFa in:</p>
+				<blockquote>
+					<p>The interface to build or edit lists uses a WYSIWYG metaphor implemented in Javascript operating over RDFa markup, allowing the user to drag and drop resources and edit data quickly, without the need to round trip back to the server on completion of each operation. The user’s actions of moving, adding, grouping or editing resources directly manipulate the RDFa model within the page. When the user has finished editing, they hit a save button which serialises the RDFa model in the page into an RDF/XML model which is submitted back to the server. The server then performs a delta on the incoming model with that in the persistent store. Any changes identified are applied to the store, and the next view of the list will reflect the user’s updates.</p>
+					<p>Using the approach of direct manipulation of RDFa, which is then posted this back to the server has two advantages. Firstly, in elegance simplicity of implementation—rather than having to keep track of multiple operations or edits to data in the persistent store via complex form submission or multiple AJAX calls, we are simply allowing the user to directly edit an RDF model locally (albeit via an appropriately familiar and usable metaphor) and simply send one form field containing the new model back to the server to update the stored copy. Secondly, by embedding RDFa in the HTML view of the entity, we are providing systems integrators or even indexing agents (such as Yahoo’s SearchMonkey) another route to discovering the semantics of the data represented in the page.</p>
+				</blockquote>
+			</div>
+			<div class="post-meta">
+				<dl class="article-meta span-3 last prepend-1">
+					<dt class="author">Manu Sporny</dt>
+					<dd class="date">30 Feb 2009</dd>
+				</dl>
+				<dl class="comment-meta span-1 prepend-1">
+					<dt>Comments</dt>
+					<dd>There have been 3 replies to this post</dd>
+					<dd><a href="">Leave a comment</a></dd>
+				</dl>
+				<dl class="category-meta span-2 last">
+					<dt>Categories</dt>
+					<dd><a href="">Usage</a></dd>
+				</dl>
+			</div>
+			<hr class="divider" />
+		</div>
+		<div class="post container">
+			<div class="post-title">
+				<h2 class="span-5 prepend-1">MySpace Using RDFa</h2>
+			</div>
+			<div class="post-body span-4 prepend-1">
+				<p>Ben Adida points out in his posting <a href="http://some-site.com/">Paris Hilton thinks RDFa is hot</a> that MySpace has started using RDFa, and points to Paris Hilton’s page.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim.</p>
+			</div>
+			<div class="post-meta">
+				<dl class="article-meta span-3 last prepend-1">
+					<dt class="author">Manu Sporny</dt>
+					<dd class="date">30 Feb 2009</dd>
+				</dl>
+				<dl class="comment-meta span-1 prepend-1">
+					<dt>Comments</dt>
+					<dd>There have been 3 replies to this post</dd>
+					<dd><a href="">Leave a comment</a></dd>
+				</dl>
+				<dl class="category-meta span-2 last">
+					<dt>Categories</dt>
+					<dd><a href="">Usage</a></dd>
+				</dl>
+			</div>
+			<hr class="divider" />
+		</div>
+	</div>
+	<div id="footer">
+		<div class="container">
+			<div class="span-1 sw-logo">
+				<a href="http://www.w3.org/2001/sw/" title="The Semantic Web"><img src="img/semantic-web.png" /></a>
+			</div>
+			<div class="span-1 category-list">
+				<dl>
+					<dt>Categories</dt>
+					<dd><a href="">Development (17)</a></dd>
+					<dd><a href="">HOWTOs (11)</a></dd>
+					<dd><a href="">Implementations (39)</a></dd>
+					<dd><a href="">Outreach (13)</a></dd>
+					<dd><a href="">Presentations (15)</a></dd>
+					<dd><a href="">Publication (6)</a></dd>
+					<dd><a href="">Reviews (8)</a></dd>
+					<dd><a href="">Specifications (17)</a></dd>
+					<dd><a href="">Uncategorized (5)</a></dd>
+					<dd><a href="">Usage (24)</a></dd>
+				</dl>
+			</div>
+			<div class="span-1 resource-list">
+				<dl>
+					<dt>Resources</dt>
+					<dd><a href="">Mark&rsquo;s Introduction to RDFa</a></dd>
+					<dd><a href="">RDFa Bookmarklets</a></dd>
+					<dd><a href="">RDFa Overview</a></dd>
+					<dd><a href="">RDFa Primer</a></dd>
+					<dd><a href="">RDFa Syntax</a></dd>
+					<dd><a href="">RDFa Test Suite</a></dd>
+					<dd><a href="">RDFa Use Cases</a></dd>
+					<dd><a href="">RDFa Wiki</a></dd>
+				</dl>
+			</div>
+			<div class="span-4">
+				<h5>Archives</h5>
+				<dl class="four-columns">
+					<dd><a href="">Developments (17)</a></dd>
+					<dd><a href="">HOWTOs (11)</a></dd>
+					<dd><a href="">RDFa Bookmarklets</a></dd>
+					<dd><a href="">Outreach (13)</a></dd>
+					<dd><a href="">Presentations (15)</a></dd>
+					<dd><a href="">Publication (6)</a></dd>
+					<dd><a href="">Reviews (8)</a></dd>
+					<dd><a href="">Specifications (17)</a></dd>
+					<dd><a href="">Uncategorized (5)</a></dd>
+					<dd><a href="">Usage (24)</a></dd>
+					<dd><a href="">Development (17)</a></dd>
+					<dd><a href="">HOWTOs (11)</a></dd>
+					<dd><a href="">Implementations (39)</a></dd>
+					<dd><a href="">Outreach (13)</a></dd>
+					<dd><a href="">Presentations (15)</a></dd>
+					<dd><a href="">Publication (6)</a></dd>
+					<dd><a href="">Reviews (8)</a></dd>
+					<dd><a href="">Specifications (17)</a></dd>
+					<dd><a href="">Uncategorized (5)</a></dd>
+					<dd><a href="">Usage (24)</a></dd>
+					<dd><a href="">Development (17)</a></dd>
+					<dd><a href="">HOWTOs (11)</a></dd>
+					<dd><a href="">Implementations (39)</a></dd>
+					<dd><a href="">Outreach (13)</a></dd>
+					<dd><a href="">Presentations (15)</a></dd>
+					<dd><a href="">Publication (6)</a></dd>
+					<dd><a href="">Reviews (8)</a></dd>
+					<dd><a href="">Specifications (17)</a></dd>
+					<dd><a href="">Uncategorized (5)</a></dd>
+					<dd><a href="">Usage (24)</a></dd>
+					<dd><a href="">Development (17)</a></dd>
+					<dd><a href="">HOWTOs (11)</a></dd>
+					<dd><a href="">Implementations (39)</a></dd>
+					<dd><a href="">Outreach (13)</a></dd>
+					<dd><a href="">Presentations (15)</a></dd>
+					<dd><a href="">Publication (6)</a></dd>
+					<dd><a href="">Reviews (8)</a></dd>
+					<dd><a href="">Specifications (17)</a></dd>
+					<dd><a href="">Uncategorized (5)</a></dd>
+					<dd><a href="">Usage (24)</a></dd>
+				</dl>
+			</div>
+		</div>
+	</div>				
+</body>
+</html>
